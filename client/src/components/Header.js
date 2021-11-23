@@ -52,6 +52,7 @@ export default function Header() {
         <Box>
             <AppBar 
                 elevation={1} 
+                position="sticky"
                 sx={{
                     backgroundColor: '#414536',
                     color: '#FFF',
