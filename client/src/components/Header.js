@@ -49,17 +49,17 @@ export default function Header() {
       }));
 
     return (
-        <Box>
+        <Box sx={{paddingBottom: '69px'}}>
             <AppBar 
                 elevation={1} 
-                position="sticky"
                 sx={{
+                    width: '100%',
                     backgroundColor: '#414536',
                     color: '#FFF',
                 }}
             >
                 <Toolbar>
-                    <Grid container justifyContent="space-around" alignItems="center">
+                    <Grid container justifyContent='space-between' alignItems="center">
                     <Grid item>
                         <Typography variant='h6'>Track Drop</Typography>
                     </Grid>
