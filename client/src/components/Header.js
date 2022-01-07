@@ -49,7 +49,7 @@ export default function Header() {
       }));
 
     return (
-        <Box sx={{paddingBottom: '69px'}}>
+        <Box sx={{paddingBottom: '76px'}}>
             <AppBar 
                 elevation={1} 
                 sx={{
