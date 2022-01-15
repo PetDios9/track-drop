@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import {
   Avatar,
@@ -8,7 +8,7 @@ import {
   CardContent,
   CardHeader,
   Grid,
-  LinearProgress,
+  // LinearProgress,
   Typography,
 } from '@mui/material';
 import { Box } from '@mui/system';
@@ -17,7 +17,6 @@ function TrackCard({
   id, trackLink, user, comment,
 }) {
   const embedLink = `${trackLink.slice(0, 24)}/embed${trackLink.slice(24)}`;
-  const [isLoading, setIsLoading] = useState(true);
 
   return (
     <Box sx={{ maxWidth: 500 }}>
@@ -25,9 +24,7 @@ function TrackCard({
         <CardHeader avatar={<Avatar />} title={user.name} />
         <Grid container direction="column" alignItems="center">
           <Grid item xs={12}>
-            {isLoading && <LinearProgress color="inherit" />}
             <iframe
-              onLoad={() => setIsLoading(false)}
               title={id}
               src={embedLink}
               width="500"

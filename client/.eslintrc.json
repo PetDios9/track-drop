@@ -14,7 +14,7 @@
   "plugins": ["react"],
   "rules": {
     "no-console": "warn",
-    "no-eval": "error",
+    "no-eval": "warn",
     "max-len": "warn",
     "linebreak-style": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
