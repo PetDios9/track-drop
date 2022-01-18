@@ -1,13 +1,13 @@
 /* eslint-disable react/react-in-jsx-scope */
 import './App.css';
 import Header from './components/Header';
-import LoginPage from './pages/LoginPage';
+import CreateProfilePage from './pages/CreateAccountPage';
 
 function App() {
   return (
     <>
       <Header />
-      <LoginPage />
+      <CreateProfilePage />
     </>
   );
 }
