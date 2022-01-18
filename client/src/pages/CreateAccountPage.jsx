@@ -11,7 +11,7 @@ export default function LoginPage() {
     <Grid>
       <Paper
         sx={{
-          padding: '30px', height: '60vh', width: 350, margin: '80px auto',
+          padding: '20px', height: '70vh', width: 350, margin: '80px auto',
         }}
         elevation={10}
       >
