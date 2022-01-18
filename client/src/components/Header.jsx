@@ -56,7 +56,7 @@ function Header() {
   }));
 
   return (
-    <Box sx={{ paddingBottom: '6em' }}>
+    <Box>
       <AppBar
         elevation={1}
         sx={{
@@ -64,6 +64,7 @@ function Header() {
           backgroundColor: '#414536',
           color: '#FFF',
         }}
+        position="sticky"
       >
         <Toolbar>
           <Grid container justifyContent="space-between" alignItems="center">

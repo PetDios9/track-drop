@@ -1,13 +1,13 @@
 /* eslint-disable react/react-in-jsx-scope */
 import './App.css';
 import Header from './components/Header';
-import FeedPage from './pages/FeedPage';
+import LoginPage from './pages/LoginPage';
 
 function App() {
   return (
     <>
       <Header />
-      <FeedPage />
+      <LoginPage />
     </>
   );
 }

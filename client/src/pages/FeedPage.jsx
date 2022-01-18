@@ -14,8 +14,6 @@ function FeedPage() {
     dispatch(getPosts());
   }, [dispatch]);
 
-  console.log(posts);
-
   return (
     <Box>
       <Grid container direction="column" alignItems="center" spacing={3}>
