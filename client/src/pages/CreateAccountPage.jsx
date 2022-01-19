@@ -11,7 +11,7 @@ export default function LoginPage() {
     <Grid>
       <Paper
         sx={{
-          padding: '20px', height: '70vh', width: 350, margin: '80px auto',
+          padding: '20px', height: '70vh', width: 320, margin: '80px auto',
         }}
         elevation={10}
       >
@@ -24,7 +24,7 @@ export default function LoginPage() {
             <TextField variant="standard" label="Username" placeholder="Enter Username" />
           </Grid>
           <Grid item xs={8}>
-            <TextField variant="standard" label="Email" type="password" placeholder="Enter Email" />
+            <TextField variant="standard" label="Email" type="email" placeholder="Enter Email" />
           </Grid>
           <Grid item xs={8}>
             <TextField variant="standard" label="Password" type="password" placeholder="Enter Password" />
