@@ -6,24 +6,13 @@ import {
   Toolbar,
   Typography,
   Grid,
-  Menu,
-  MenuItem,
 } from '@mui/material';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import { Box } from '@mui/system';
 import HeaderSearchBar from './HeaderSearchBar/HeaderSearchBar';
+import HeaderMenu from './HeaderMenu/HeaderMenu';
 
 function Header() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
   return (
     <Box>
       <AppBar
@@ -46,32 +35,7 @@ function Header() {
             <Box>
               <Grid item>
                 <Stack direction="row" spacing={3}>
-                  <Box>
-                    <IconButton
-                      size="large"
-                      edge="end"
-                      color="inherit"
-                      aria-label="menu"
-                      aria-controls={open ? 'basic-menu' : undefined}
-                      aria-haspopup="true"
-                      aria-expanded={open ? 'true' : undefined}
-                      onClick={handleClick}
-                    >
-                      <MoreVertIcon />
-                    </IconButton>
-                    <Menu
-                      id="basic-menu"
-                      anchorEl={anchorEl}
-                      open={open}
-                      onClose={handleClose}
-                      MenuListProps={{
-                        'aria-labelledby': 'basic-button',
-                      }}
-                    >
-                      <MenuItem onClick={handleClose}>My account</MenuItem>
-                      <MenuItem onClick={handleClose}>Logout</MenuItem>
-                    </Menu>
-                  </Box>
+                  <HeaderMenu />
                   <Box>
                     <IconButton
                       size="large"
